@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ZadatakAssecoSEE</string>
+
+    <string name="registration_lbl_name">Ime:</string>
+    <string name="registration_lbl_surname">Prezime:</string>
+    <string name="registration_btn_next">Dalje</string>
+    <string name="registration_error_connection">Greška kod registracije!</string>
+    <string name="registration_progress_text">Učitavanje</string>
+    <string name="dialog_lbl_enterPIN">Unesite PIN:</string>
+    <string name="dialog_btn_back">Povratak</string>
+    <string name="dialog_error_PIN">Pin mora biti dužine 4 do 6 znaka!</string>
+    <string name="dialog_error_wrongPIN">Unesli ste pogrešan pin!</string>
+    <string name="dialog_lbl_selectAccount">Odaberite račun!</string>
+    <string name="dialog_error_inputInvalid">Niste unesli ime/prezime!</string>
+    <string name="mytransactions_lbl_IBAN">IBAN</string>
+    <string name="mytransactions_btn_accounts">Računi</string>
+    <string name="mytransactions_btn_logout">Odjava</string>
+    <string name="mytransactions_btn_login">Login</string>
+
+    <string name="keyboardnr_zero">0</string>
+    <string name="keyboardnr_one">1</string>
+    <string name="keyboardnr_two">2</string>
+    <string name="keyboardnr_three">3</string>
+    <string name="keyboardnr_four">4</string>
+    <string name="keyboardnr_five">5</string>
+    <string name="keyboardnr_six">6</string>
+    <string name="keyboardnr_seven">7</string>
+    <string name="keyboardnr_eight">8</string>
+    <string name="keyboardnr_nine">9</string>
+    <string name="keyboardbtn_confirm">Potvrdi</string>
+    <string name="keyboardbtn_backspace">Briši</string>
+</resources>

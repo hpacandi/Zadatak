@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@color/colorGrayBackground"
+    android:padding="15dp"
+    >
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_lbl_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:labelFor="@+id/name_field"
+        />
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_below="@+id/name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorGrayDetail"
+        android:layout_marginBottom="15dp"
+        android:digits="abcčćdđefghijklmnopqrsštuvwxyzžABCČĆDĐEFGHIJKLMNOPQRSŠTUVWXYZŽ1234567890 "
+        />
+
+    <TextView
+        android:id="@+id/surname_label"
+        android:layout_below="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_lbl_surname"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:labelFor="@+id/surname_field"
+        />
+
+    <EditText
+        android:id="@+id/surname_field"
+        android:layout_below="@+id/surname_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorGrayDetail"
+        android:layout_marginBottom="15dp"
+        android:digits="abcčćdđefghijklmnopqrsštuvwxyzžABCČĆDĐEFGHIJKLMNOPQRSŠTUVWXYZŽ1234567890 "
+        />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_below="@+id/surname_field"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentEnd="true"
+        android:singleLine="true"
+        android:text="@string/registration_btn_next"
+        android:background="@drawable/button_design"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorGrayBackground"
+        android:textSize="16sp"
+        />
+
+
+
+</RelativeLayout>

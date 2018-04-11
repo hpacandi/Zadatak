@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/pin_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/keyboard"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorGrayBackground"
+        android:enabled="false"
+        android:gravity="center"
+        android:maxLength="6"
+        android:minHeight="48dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textSize="35sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorGrayDetail"
+        />
+
+    <TableLayout
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:divider="@drawable/keyboard_lines"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:showDividers="beginning|middle|end">
+
+        <TableRow style="@style/keyboard_row">
+
+            <TextView
+                android:id="@+id/keyboard_key_1"
+                style="@style/keyboard_number_button"
+                android:text="@string/keyboardnr_one"/>
+
+            <TextView
+                android:id="@+id/keyboard_key_2"
+                style="@style/keyboard_number_button"
+                android:text="@string/keyboardnr_two"/>
+
+            <TextView
+                android:id="@+id/keyboard_key_3"
+                style="@style/keyboard_number_button"
+                android:text="@string/keyboardnr_three"/>
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+
+            <TextView
+                android:id="@+id/keyboard_key_4"
+                style="@style/keyboard_number_button"
+                android:text="@string/keyboardnr_four"/>
+
+            <TextView
+                android:id="@+id/keyboard_key_5"
+                style="@style/keyboard_number_button"
+                android:text="@string/keyboardnr_five"/>
+
+            <TextView
+                android:id="@+id/keyboard_key_6"
+                style="@style/keyboard_number_button"
+                android:text="@string/keyboardnr_six"/>
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+
+            <TextView
+                android:id="@+id/keyboard_key_7"
+                style="@style/keyboard_number_button"
+                android:text="@string/keyboardnr_seven"/>
+
+            <TextView
+                android:id="@+id/keyboard_key_8"
+                style="@style/keyboard_number_button"
+                android:text="@string/keyboardnr_eight"/>
+
+            <TextView
+                android:id="@+id/keyboard_key_9"
+                style="@style/keyboard_number_button"
+                android:text="@string/keyboardnr_nine"/>
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+
+            <TextView
+                android:id="@+id/keyboard_key_backspace"
+                style="@style/keyboard_button"
+                android:text="@string/keyboardbtn_backspace"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/keyboard_key_0"
+                style="@style/keyboard_number_button"
+                android:text="@string/keyboardnr_zero"/>
+
+            <TextView
+                android:id="@+id/keyboard_key_confirm"
+                style="@style/keyboard_button"
+                android:text="@string/keyboardbtn_confirm"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

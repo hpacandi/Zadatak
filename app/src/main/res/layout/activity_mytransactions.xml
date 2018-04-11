@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayBackground"
+    tools:context="com.hpacandi.zadatak.MyTransactions">
+
+    <RelativeLayout
+        android:id="@+id/mytrans_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayHighlight"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_toStartOf="@+id/mytrans_bttlayout"
+
+        >
+
+        <TextView
+            android:id="@+id/mytrans_lbl_IBAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:labelFor="@+id/mytrans_value_IBAN"
+            android:text="@string/mytransactions_lbl_IBAN"
+            />
+
+        <TextView
+            android:id="@+id/mytrans_value_IBAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrayDetail"
+            android:layout_below="@+id/mytrans_lbl_IBAN"
+            android:layout_toStartOf="@+id/mytrans_value_currency"
+            android:layout_alignParentStart="true"
+            android:paddingEnd="10dp"
+            />
+
+        <TextView
+            android:id="@+id/mytrans_lbl_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorGrayDetail"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/mytrans_value_IBAN"
+            />
+
+        <TextView
+            android:id="@+id/mytrans_value_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/mytrans_lbl_currency"
+            android:layout_alignBottom="@+id/mytrans_lbl_currency"
+            android:layout_alignParentTop="true"
+            android:gravity="center|end"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingEnd="8dp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mytrans_bttlayout"
+        android:layout_alignBottom="@+id/mytrans_account"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@color/colorGrayHighlight"
+        >
+
+        <Button
+            android:id="@+id/mytrans_btt_switchAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/mytransactions_btn_accounts"
+            android:background="@drawable/button_design"
+            android:padding="10dp"
+            android:textColor="@color/colorGrayHighlight"
+            android:textSize="16sp"
+
+            />
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/mytransactions_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mytrans_account"
+        android:layout_above="@+id/mytrans_btt_logout"
+        >
+
+    </ExpandableListView>
+
+    <Button
+        android:id="@+id/mytrans_btt_logout"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="@string/mytransactions_btn_logout"
+        android:background="@drawable/button_design"
+        android:padding="10dp"
+        android:textColor="@color/colorGrayHighlight"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+</RelativeLayout>
